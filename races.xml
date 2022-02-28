@@ -1,0 +1,484 @@
+<?xml version="1.0" standalone="yes"?>
+<Races>
+	<Race>
+		<raceId>1000</raceId>
+		<year>2018</year>
+		<round>12</round>
+		<circuitId>11</circuitId>
+		<name>Hungarian Grand Prix</name>
+		<date>29/7/2018</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Hungarian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1001</raceId>
+		<year>2018</year>
+		<round>13</round>
+		<circuitId>13</circuitId>
+		<name>Belgian Grand Prix</name>
+		<date>26/8/2018</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Belgian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1002</raceId>
+		<year>2018</year>
+		<round>14</round>
+		<circuitId>14</circuitId>
+		<name>Italian Grand Prix</name>
+		<date>2/9/2018</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Italian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1003</raceId>
+		<year>2018</year>
+		<round>15</round>
+		<circuitId>15</circuitId>
+		<name>Singapore Grand Prix</name>
+		<date>16/9/2018</date>
+		<time>12:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Singapore_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1004</raceId>
+		<year>2018</year>
+		<round>16</round>
+		<circuitId>71</circuitId>
+		<name>Russian Grand Prix</name>
+		<date>30/9/2018</date>
+		<time>11:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Russian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1005</raceId>
+		<year>2018</year>
+		<round>17</round>
+		<circuitId>22</circuitId>
+		<name>Japanese Grand Prix</name>
+		<date>7/10/2018</date>
+		<time>05:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Japanese_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1006</raceId>
+		<year>2018</year>
+		<round>18</round>
+		<circuitId>69</circuitId>
+		<name>United States Grand Prix</name>
+		<date>21/10/2018</date>
+		<time>18:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_United_States_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1007</raceId>
+		<year>2018</year>
+		<round>19</round>
+		<circuitId>32</circuitId>
+		<name>Mexican Grand Prix</name>
+		<date>28/10/2018</date>
+		<time>19:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Mexican_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1008</raceId>
+		<year>2018</year>
+		<round>20</round>
+		<circuitId>18</circuitId>
+		<name>Brazilian Grand Prix</name>
+		<date>11/11/2018</date>
+		<time>17:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Brazilian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1009</raceId>
+		<year>2018</year>
+		<round>21</round>
+		<circuitId>24</circuitId>
+		<name>Abu Dhabi Grand Prix</name>
+		<date>25/11/2018</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2018_Abu_Dhabi_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1010</raceId>
+		<year>2019</year>
+		<round>1</round>
+		<circuitId>1</circuitId>
+		<name>Australian Grand Prix</name>
+		<date>17/3/2019</date>
+		<time>05:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Australian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1011</raceId>
+		<year>2019</year>
+		<round>2</round>
+		<circuitId>3</circuitId>
+		<name>Bahrain Grand Prix</name>
+		<date>31/3/2019</date>
+		<time>15:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Bahrain_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1012</raceId>
+		<year>2019</year>
+		<round>3</round>
+		<circuitId>17</circuitId>
+		<name>Chinese Grand Prix</name>
+		<date>14/4/2019</date>
+		<time>06:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Chinese_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1013</raceId>
+		<year>2019</year>
+		<round>4</round>
+		<circuitId>73</circuitId>
+		<name>Azerbaijan Grand Prix</name>
+		<date>28/4/2019</date>
+		<time>12:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Azerbaijan_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1014</raceId>
+		<year>2019</year>
+		<round>5</round>
+		<circuitId>4</circuitId>
+		<name>Spanish Grand Prix</name>
+		<date>12/5/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Spanish_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1015</raceId>
+		<year>2019</year>
+		<round>6</round>
+		<circuitId>6</circuitId>
+		<name>Monaco Grand Prix</name>
+		<date>26/5/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Monaco_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1016</raceId>
+		<year>2019</year>
+		<round>7</round>
+		<circuitId>7</circuitId>
+		<name>Canadian Grand Prix</name>
+		<date>9/6/2019</date>
+		<time>18:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Canadian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1017</raceId>
+		<year>2019</year>
+		<round>8</round>
+		<circuitId>34</circuitId>
+		<name>French Grand Prix</name>
+		<date>23/6/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_French_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1018</raceId>
+		<year>2019</year>
+		<round>9</round>
+		<circuitId>70</circuitId>
+		<name>Austrian Grand Prix</name>
+		<date>30/6/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Austrian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1019</raceId>
+		<year>2019</year>
+		<round>10</round>
+		<circuitId>9</circuitId>
+		<name>British Grand Prix</name>
+		<date>14/7/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_British_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1020</raceId>
+		<year>2019</year>
+		<round>11</round>
+		<circuitId>10</circuitId>
+		<name>German Grand Prix</name>
+		<date>28/7/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_German_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1021</raceId>
+		<year>2019</year>
+		<round>12</round>
+		<circuitId>11</circuitId>
+		<name>Hungarian Grand Prix</name>
+		<date>4/8/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Hungarian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1022</raceId>
+		<year>2019</year>
+		<round>13</round>
+		<circuitId>13</circuitId>
+		<name>Belgian Grand Prix</name>
+		<date>1/9/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Belgian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1023</raceId>
+		<year>2019</year>
+		<round>14</round>
+		<circuitId>14</circuitId>
+		<name>Italian Grand Prix</name>
+		<date>8/9/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Italian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1024</raceId>
+		<year>2019</year>
+		<round>15</round>
+		<circuitId>15</circuitId>
+		<name>Singapore Grand Prix</name>
+		<date>22/9/2019</date>
+		<time>12:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Singapore_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1025</raceId>
+		<year>2019</year>
+		<round>16</round>
+		<circuitId>71</circuitId>
+		<name>Russian Grand Prix</name>
+		<date>29/9/2019</date>
+		<time>11:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Russian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1026</raceId>
+		<year>2019</year>
+		<round>17</round>
+		<circuitId>22</circuitId>
+		<name>Japanese Grand Prix</name>
+		<date>13/10/2019</date>
+		<time>05:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Japanese_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1027</raceId>
+		<year>2019</year>
+		<round>18</round>
+		<circuitId>32</circuitId>
+		<name>Mexican Grand Prix</name>
+		<date>27/10/2019</date>
+		<time>19:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Mexican_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1028</raceId>
+		<year>2019</year>
+		<round>19</round>
+		<circuitId>69</circuitId>
+		<name>United States Grand Prix</name>
+		<date>3/11/2019</date>
+		<time>19:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_United_States_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1029</raceId>
+		<year>2019</year>
+		<round>20</round>
+		<circuitId>18</circuitId>
+		<name>Brazilian Grand Prix</name>
+		<date>17/11/2019</date>
+		<time>17:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Brazilian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1030</raceId>
+		<year>2019</year>
+		<round>21</round>
+		<circuitId>24</circuitId>
+		<name>Abu Dhabi Grand Prix</name>
+		<date>1/12/2019</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2019_Abu_Dhabi_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1031</raceId>
+		<year>2020</year>
+		<round>1</round>
+		<circuitId>70</circuitId>
+		<name>Austrian Grand Prix</name>
+		<date>5/7/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Austrian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1032</raceId>
+		<year>2020</year>
+		<round>2</round>
+		<circuitId>70</circuitId>
+		<name>Styrian Grand Prix</name>
+		<date>12/7/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Styrian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1033</raceId>
+		<year>2020</year>
+		<round>3</round>
+		<circuitId>11</circuitId>
+		<name>Hungarian Grand Prix</name>
+		<date>19/7/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Hungarian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1034</raceId>
+		<year>2020</year>
+		<round>4</round>
+		<circuitId>9</circuitId>
+		<name>British Grand Prix</name>
+		<date>2/8/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_British_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1035</raceId>
+		<year>2020</year>
+		<round>5</round>
+		<circuitId>9</circuitId>
+		<name>70th Anniversary Grand Prix</name>
+		<date>9/8/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/70th_Anniversary_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1036</raceId>
+		<year>2020</year>
+		<round>6</round>
+		<circuitId>4</circuitId>
+		<name>Spanish Grand Prix</name>
+		<date>16/8/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Spanish_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1037</raceId>
+		<year>2020</year>
+		<round>7</round>
+		<circuitId>13</circuitId>
+		<name>Belgian Grand Prix</name>
+		<date>30/8/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Belgian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1038</raceId>
+		<year>2020</year>
+		<round>8</round>
+		<circuitId>14</circuitId>
+		<name>Italian Grand Prix</name>
+		<date>6/9/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Italian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1039</raceId>
+		<year>2020</year>
+		<round>9</round>
+		<circuitId>76</circuitId>
+		<name>Tuscan Grand Prix</name>
+		<date>13/9/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Tuscan_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1040</raceId>
+		<year>2020</year>
+		<round>10</round>
+		<circuitId>71</circuitId>
+		<name>Russian Grand Prix</name>
+		<date>27/9/2020</date>
+		<time>11:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Russian_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1041</raceId>
+		<year>2020</year>
+		<round>11</round>
+		<circuitId>20</circuitId>
+		<name>Eifel Grand Prix</name>
+		<date>11/10/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Eifel_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1042</raceId>
+		<year>2020</year>
+		<round>12</round>
+		<circuitId>75</circuitId>
+		<name>Portuguese Grand Prix</name>
+		<date>25/10/2020</date>
+		<time>12:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Portuguese_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1043</raceId>
+		<year>2020</year>
+		<round>13</round>
+		<circuitId>21</circuitId>
+		<name>Emilia Romagna Grand Prix</name>
+		<date>1/11/2020</date>
+		<time>12:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Emilia_Romagna_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1044</raceId>
+		<year>2020</year>
+		<round>14</round>
+		<circuitId>5</circuitId>
+		<name>Turkish Grand Prix</name>
+		<date>15/11/2020</date>
+		<time>10:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Turkish_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1045</raceId>
+		<year>2020</year>
+		<round>15</round>
+		<circuitId>3</circuitId>
+		<name>Bahrain Grand Prix</name>
+		<date>29/11/2020</date>
+		<time>14:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Bahrain_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1046</raceId>
+		<year>2020</year>
+		<round>16</round>
+		<circuitId>3</circuitId>
+		<name>Sakhir Grand Prix</name>
+		<date>6/12/2020</date>
+		<time>17:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Sakhir_Grand_Prix</url>
+	</Race>
+	<Race>
+		<raceId>1047</raceId>
+		<year>2020</year>
+		<round>17</round>
+		<circuitId>24</circuitId>
+		<name>Abu Dhabi Grand Prix</name>
+		<date>13/12/2020</date>
+		<time>13:10:00</time>
+		<url>https://en.wikipedia.org/wiki/2020_Abu_Dhabi_Grand_Prix</url>
+	</Race>
+</Races>
+

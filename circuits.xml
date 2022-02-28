@@ -1,0 +1,840 @@
+<?xml version="1.0" standalone="yes"?>
+<Circuits>
+	<Circuit>
+		<circuitId>1</circuitId>
+		<circuitRef>albert_park</circuitRef>
+		<name>Albert Park Grand Prix Circuit</name>
+		<location>Melbourne</location>
+		<country>Australia</country>
+		<lat>-37.8497</lat>
+		<lng>144.968</lng>
+		<alt>10</alt>
+		<url>http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>2</circuitId>
+		<circuitRef>sepang</circuitRef>
+		<name>Sepang International Circuit</name>
+		<location>Kuala Lumpur</location>
+		<country>Malaysia</country>
+		<lat>2.76083</lat>
+		<lng>101.738</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Sepang_International_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>3</circuitId>
+		<circuitRef>bahrain</circuitRef>
+		<name>Bahrain International Circuit</name>
+		<location>Sakhir</location>
+		<country>Bahrain</country>
+		<lat>26.0325</lat>
+		<lng>50.5106</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Bahrain_International_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>4</circuitId>
+		<circuitRef>catalunya</circuitRef>
+		<name>Circuit de Barcelona-Catalunya</name>
+		<location>Montmeló</location>
+		<country>Spain</country>
+		<lat>41.57</lat>
+		<lng>2.26111</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>5</circuitId>
+		<circuitRef>istanbul</circuitRef>
+		<name>Istanbul Park</name>
+		<location>Istanbul</location>
+		<country>Turkey</country>
+		<lat>40.9517</lat>
+		<lng>29.405</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Istanbul_Park</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>6</circuitId>
+		<circuitRef>monaco</circuitRef>
+		<name>Circuit de Monaco</name>
+		<location>Monte-Carlo</location>
+		<country>Monaco</country>
+		<lat>43.7347</lat>
+		<lng>7.42056</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_de_Monaco</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>7</circuitId>
+		<circuitRef>villeneuve</circuitRef>
+		<name>Circuit Gilles Villeneuve</name>
+		<location>Montreal</location>
+		<country>Canada</country>
+		<lat>45.5</lat>
+		<lng>-73.5228</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>8</circuitId>
+		<circuitRef>magny_cours</circuitRef>
+		<name>Circuit de Nevers Magny-Cours</name>
+		<location>Magny Cours</location>
+		<country>France</country>
+		<lat>46.8642</lat>
+		<lng>3.16361</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_de_Nevers_Magny-Cours</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>9</circuitId>
+		<circuitRef>silverstone</circuitRef>
+		<name>Silverstone Circuit</name>
+		<location>Silverstone</location>
+		<country>UK</country>
+		<lat>52.0786</lat>
+		<lng>-1.01694</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Silverstone_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>10</circuitId>
+		<circuitRef>hockenheimring</circuitRef>
+		<name>Hockenheimring</name>
+		<location>Hockenheim</location>
+		<country>Germany</country>
+		<lat>49.3278</lat>
+		<lng>8.56583</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Hockenheimring</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>11</circuitId>
+		<circuitRef>hungaroring</circuitRef>
+		<name>Hungaroring</name>
+		<location>Budapest</location>
+		<country>Hungary</country>
+		<lat>47.5789</lat>
+		<lng>19.2486</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Hungaroring</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>12</circuitId>
+		<circuitRef>valencia</circuitRef>
+		<name>Valencia Street Circuit</name>
+		<location>Valencia</location>
+		<country>Spain</country>
+		<lat>39.4589</lat>
+		<lng>-0.331667</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Valencia_Street_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>13</circuitId>
+		<circuitRef>spa</circuitRef>
+		<name>Circuit de Spa-Francorchamps</name>
+		<location>Spa</location>
+		<country>Belgium</country>
+		<lat>50.4372</lat>
+		<lng>5.97139</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>14</circuitId>
+		<circuitRef>monza</circuitRef>
+		<name>Autodromo Nazionale di Monza</name>
+		<location>Monza</location>
+		<country>Italy</country>
+		<lat>45.6156</lat>
+		<lng>9.28111</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>15</circuitId>
+		<circuitRef>marina_bay</circuitRef>
+		<name>Marina Bay Street Circuit</name>
+		<location>Marina Bay</location>
+		<country>Singapore</country>
+		<lat>1.2914</lat>
+		<lng>103.864</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>16</circuitId>
+		<circuitRef>fuji</circuitRef>
+		<name>Fuji Speedway</name>
+		<location>Oyama</location>
+		<country>Japan</country>
+		<lat>35.3717</lat>
+		<lng>138.927</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Fuji_Speedway</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>17</circuitId>
+		<circuitRef>shanghai</circuitRef>
+		<name>Shanghai International Circuit</name>
+		<location>Shanghai</location>
+		<country>China</country>
+		<lat>31.3389</lat>
+		<lng>121.22</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Shanghai_International_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>18</circuitId>
+		<circuitRef>interlagos</circuitRef>
+		<name>Autódromo José Carlos Pace</name>
+		<location>São Paulo</location>
+		<country>Brazil</country>
+		<lat>-23.7036</lat>
+		<lng>-46.6997</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>19</circuitId>
+		<circuitRef>indianapolis</circuitRef>
+		<name>Indianapolis Motor Speedway</name>
+		<location>Indianapolis</location>
+		<country>USA</country>
+		<lat>39.795</lat>
+		<lng>-86.2347</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>20</circuitId>
+		<circuitRef>nurburgring</circuitRef>
+		<name>Nürburgring</name>
+		<location>Nürburg</location>
+		<country>Germany</country>
+		<lat>50.3356</lat>
+		<lng>6.9475</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/N%C3%BCrburgring</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>21</circuitId>
+		<circuitRef>imola</circuitRef>
+		<name>Autodromo Enzo e Dino Ferrari</name>
+		<location>Imola</location>
+		<country>Italy</country>
+		<lat>44.3439</lat>
+		<lng>11.7167</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Autodromo_Enzo_e_Dino_Ferrari</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>22</circuitId>
+		<circuitRef>suzuka</circuitRef>
+		<name>Suzuka Circuit</name>
+		<location>Suzuka</location>
+		<country>Japan</country>
+		<lat>34.8431</lat>
+		<lng>136.541</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Suzuka_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>23</circuitId>
+		<circuitRef>osterreichring</circuitRef>
+		<name>A1-Ring</name>
+		<location>Spielburg</location>
+		<country>Austria</country>
+		<lat>47.2197</lat>
+		<lng>14.7647</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/A1-Ring</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>24</circuitId>
+		<circuitRef>yas_marina</circuitRef>
+		<name>Yas Marina Circuit</name>
+		<location>Abu Dhabi</location>
+		<country>UAE</country>
+		<lat>24.4672</lat>
+		<lng>54.6031</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Yas_Marina_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>25</circuitId>
+		<circuitRef>galvez</circuitRef>
+		<name>Autódromo Juan y Oscar Gálvez</name>
+		<location>Buenos Aires</location>
+		<country>Argentina</country>
+		<lat>-34.6943</lat>
+		<lng>-58.4593</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>26</circuitId>
+		<circuitRef>jerez</circuitRef>
+		<name>Circuito de Jerez</name>
+		<location>Jerez de la Frontera</location>
+		<country>Spain</country>
+		<lat>36.7083</lat>
+		<lng>-6.03417</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuito_Permanente_de_Jerez</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>27</circuitId>
+		<circuitRef>estoril</circuitRef>
+		<name>Autódromo do Estoril</name>
+		<location>Estoril</location>
+		<country>Portugal</country>
+		<lat>38.7506</lat>
+		<lng>-9.39417</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Aut%C3%B3dromo_do_Estoril</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>28</circuitId>
+		<circuitRef>okayama</circuitRef>
+		<name>Okayama International Circuit</name>
+		<location>Okayama</location>
+		<country>Japan</country>
+		<lat>34.915</lat>
+		<lng>134.221</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/TI_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>29</circuitId>
+		<circuitRef>adelaide</circuitRef>
+		<name>Adelaide Street Circuit</name>
+		<location>Adelaide</location>
+		<country>Australia</country>
+		<lat>-34.9272</lat>
+		<lng>138.617</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Adelaide_Street_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>30</circuitId>
+		<circuitRef>kyalami</circuitRef>
+		<name>Kyalami</name>
+		<location>Midrand</location>
+		<country>South Africa</country>
+		<lat>-25.9894</lat>
+		<lng>28.0767</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Kyalami</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>31</circuitId>
+		<circuitRef>donington</circuitRef>
+		<name>Donington Park</name>
+		<location>Castle Donington</location>
+		<country>UK</country>
+		<lat>52.8306</lat>
+		<lng>-1.37528</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Donington_Park</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>32</circuitId>
+		<circuitRef>rodriguez</circuitRef>
+		<name>Autódromo Hermanos Rodríguez</name>
+		<location>Mexico City</location>
+		<country>Mexico</country>
+		<lat>19.4042</lat>
+		<lng>-99.0907</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>33</circuitId>
+		<circuitRef>phoenix</circuitRef>
+		<name>Phoenix street circuit</name>
+		<location>Phoenix</location>
+		<country>USA</country>
+		<lat>33.4479</lat>
+		<lng>-112.075</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Phoenix_street_circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>34</circuitId>
+		<circuitRef>ricard</circuitRef>
+		<name>Circuit Paul Ricard</name>
+		<location>Le Castellet</location>
+		<country>France</country>
+		<lat>43.2506</lat>
+		<lng>5.79167</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Paul_Ricard_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>35</circuitId>
+		<circuitRef>yeongam</circuitRef>
+		<name>Korean International Circuit</name>
+		<location>Yeongam County</location>
+		<country>Korea</country>
+		<lat>34.7333</lat>
+		<lng>126.417</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Korean_International_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>36</circuitId>
+		<circuitRef>jacarepagua</circuitRef>
+		<name>Autódromo Internacional Nelson Piquet</name>
+		<location>Rio de Janeiro</location>
+		<country>Brazil</country>
+		<lat>-22.9756</lat>
+		<lng>-43.395</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>37</circuitId>
+		<circuitRef>detroit</circuitRef>
+		<name>Detroit Street Circuit</name>
+		<location>Detroit</location>
+		<country>USA</country>
+		<lat>42.3298</lat>
+		<lng>-83.0401</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Detroit_street_circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>38</circuitId>
+		<circuitRef>brands_hatch</circuitRef>
+		<name>Brands Hatch</name>
+		<location>Kent</location>
+		<country>UK</country>
+		<lat>51.3569</lat>
+		<lng>0.263056</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Brands_Hatch</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>39</circuitId>
+		<circuitRef>zandvoort</circuitRef>
+		<name>Circuit Park Zandvoort</name>
+		<location>Zandvoort</location>
+		<country>Netherlands</country>
+		<lat>52.3888</lat>
+		<lng>4.54092</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_Zandvoort</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>40</circuitId>
+		<circuitRef>zolder</circuitRef>
+		<name>Zolder</name>
+		<location>Heusden-Zolder</location>
+		<country>Belgium</country>
+		<lat>50.9894</lat>
+		<lng>5.25694</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Zolder</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>41</circuitId>
+		<circuitRef>dijon</circuitRef>
+		<name>Dijon-Prenois</name>
+		<location>Dijon</location>
+		<country>France</country>
+		<lat>47.3625</lat>
+		<lng>4.89913</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Dijon-Prenois</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>42</circuitId>
+		<circuitRef>dallas</circuitRef>
+		<name>Fair Park</name>
+		<location>Dallas</location>
+		<country>USA</country>
+		<lat>32.7774</lat>
+		<lng>-96.7587</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Fair_Park</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>43</circuitId>
+		<circuitRef>long_beach</circuitRef>
+		<name>Long Beach</name>
+		<location>California</location>
+		<country>USA</country>
+		<lat>33.7651</lat>
+		<lng>-118.189</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Long_Beach,_California</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>44</circuitId>
+		<circuitRef>las_vegas</circuitRef>
+		<name>Las Vegas Street Circuit</name>
+		<location>Nevada</location>
+		<country>USA</country>
+		<lat>36.1162</lat>
+		<lng>-115.174</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Las_Vegas,_Nevada</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>45</circuitId>
+		<circuitRef>jarama</circuitRef>
+		<name>Jarama</name>
+		<location>Madrid</location>
+		<country>Spain</country>
+		<lat>40.6171</lat>
+		<lng>-3.58558</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuito_Permanente_Del_Jarama</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>46</circuitId>
+		<circuitRef>watkins_glen</circuitRef>
+		<name>Watkins Glen</name>
+		<location>New York State</location>
+		<country>USA</country>
+		<lat>42.3369</lat>
+		<lng>-76.9272</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Watkins_Glen_International</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>47</circuitId>
+		<circuitRef>anderstorp</circuitRef>
+		<name>Scandinavian Raceway</name>
+		<location>Anderstorp</location>
+		<country>Sweden</country>
+		<lat>57.2653</lat>
+		<lng>13.6042</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Scandinavian_Raceway</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>48</circuitId>
+		<circuitRef>mosport</circuitRef>
+		<name>Mosport International Raceway</name>
+		<location>Ontario</location>
+		<country>Canada</country>
+		<lat>44.0481</lat>
+		<lng>-78.6756</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Mosport</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>49</circuitId>
+		<circuitRef>montjuic</circuitRef>
+		<name>Montjuïc</name>
+		<location>Barcelona</location>
+		<country>Spain</country>
+		<lat>41.3664</lat>
+		<lng>2.15167</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Montju%C3%AFc_circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>50</circuitId>
+		<circuitRef>nivelles</circuitRef>
+		<name>Nivelles-Baulers</name>
+		<location>Brussels</location>
+		<country>Belgium</country>
+		<lat>50.6211</lat>
+		<lng>4.32694</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Nivelles-Baulers</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>51</circuitId>
+		<circuitRef>charade</circuitRef>
+		<name>Charade Circuit</name>
+		<location>Clermont-Ferrand</location>
+		<country>France</country>
+		<lat>45.7472</lat>
+		<lng>3.03889</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Charade_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>52</circuitId>
+		<circuitRef>tremblant</circuitRef>
+		<name>Circuit Mont-Tremblant</name>
+		<location>Quebec</location>
+		<country>Canada</country>
+		<lat>46.1877</lat>
+		<lng>-74.6099</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_Mont-Tremblant</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>53</circuitId>
+		<circuitRef>essarts</circuitRef>
+		<name>Rouen-Les-Essarts</name>
+		<location>Rouen</location>
+		<country>France</country>
+		<lat>49.3306</lat>
+		<lng>1.00458</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Rouen-Les-Essarts</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>54</circuitId>
+		<circuitRef>lemans</circuitRef>
+		<name>Le Mans</name>
+		<location>Le Mans</location>
+		<country>France</country>
+		<lat>47.95</lat>
+		<lng>0.224231</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_de_la_Sarthe#Bugatti_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>55</circuitId>
+		<circuitRef>reims</circuitRef>
+		<name>Reims-Gueux</name>
+		<location>Reims</location>
+		<country>France</country>
+		<lat>49.2542</lat>
+		<lng>3.93083</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Reims-Gueux</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>56</circuitId>
+		<circuitRef>george</circuitRef>
+		<name>Prince George Circuit</name>
+		<location>Eastern Cape Province</location>
+		<country>South Africa</country>
+		<lat>-33.0486</lat>
+		<lng>27.8736</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Prince_George_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>57</circuitId>
+		<circuitRef>zeltweg</circuitRef>
+		<name>Zeltweg</name>
+		<location>Styria</location>
+		<country>Austria</country>
+		<lat>47.2039</lat>
+		<lng>14.7478</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Zeltweg_Airfield</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>58</circuitId>
+		<circuitRef>aintree</circuitRef>
+		<name>Aintree</name>
+		<location>Liverpool</location>
+		<country>UK</country>
+		<lat>53.4769</lat>
+		<lng>-2.94056</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Aintree_Motor_Racing_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>59</circuitId>
+		<circuitRef>boavista</circuitRef>
+		<name>Circuito da Boavista</name>
+		<location>Oporto</location>
+		<country>Portugal</country>
+		<lat>41.1705</lat>
+		<lng>-8.67325</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuito_da_Boavista</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>60</circuitId>
+		<circuitRef>riverside</circuitRef>
+		<name>Riverside International Raceway</name>
+		<location>California</location>
+		<country>USA</country>
+		<lat>33.937</lat>
+		<lng>-117.273</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Riverside_International_Raceway</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>61</circuitId>
+		<circuitRef>avus</circuitRef>
+		<name>AVUS</name>
+		<location>Berlin</location>
+		<country>Germany</country>
+		<lat>52.4806</lat>
+		<lng>13.2514</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/AVUS</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>62</circuitId>
+		<circuitRef>monsanto</circuitRef>
+		<name>Monsanto Park Circuit</name>
+		<location>Lisbon</location>
+		<country>Portugal</country>
+		<lat>38.7197</lat>
+		<lng>-9.20306</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Monsanto_Park_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>63</circuitId>
+		<circuitRef>sebring</circuitRef>
+		<name>Sebring International Raceway</name>
+		<location>Florida</location>
+		<country>USA</country>
+		<lat>27.4547</lat>
+		<lng>-81.3483</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Sebring_Raceway</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>64</circuitId>
+		<circuitRef>ain-diab</circuitRef>
+		<name>Ain Diab</name>
+		<location>Casablanca</location>
+		<country>Morocco</country>
+		<lat>33.5786</lat>
+		<lng>-7.6875</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Ain-Diab_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>65</circuitId>
+		<circuitRef>pescara</circuitRef>
+		<name>Pescara Circuit</name>
+		<location>Pescara</location>
+		<country>Italy</country>
+		<lat>42.475</lat>
+		<lng>14.1508</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Pescara_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>66</circuitId>
+		<circuitRef>bremgarten</circuitRef>
+		<name>Circuit Bremgarten</name>
+		<location>Bern</location>
+		<country>Switzerland</country>
+		<lat>46.9589</lat>
+		<lng>7.40194</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_Bremgarten</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>67</circuitId>
+		<circuitRef>pedralbes</circuitRef>
+		<name>Circuit de Pedralbes</name>
+		<location>Barcelona</location>
+		<country>Spain</country>
+		<lat>41.3903</lat>
+		<lng>2.11667</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Pedralbes_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>68</circuitId>
+		<circuitRef>buddh</circuitRef>
+		<name>Buddh International Circuit</name>
+		<location>Uttar Pradesh</location>
+		<country>India</country>
+		<lat>28.3487</lat>
+		<lng>77.5331</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Buddh_International_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>69</circuitId>
+		<circuitRef>americas</circuitRef>
+		<name>Circuit of the Americas</name>
+		<location>Austin</location>
+		<country>USA</country>
+		<lat>30.1328</lat>
+		<lng>-97.6411</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Circuit_of_the_Americas</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>70</circuitId>
+		<circuitRef>red_bull_ring</circuitRef>
+		<name>Red Bull Ring</name>
+		<location>Spielburg</location>
+		<country>Austria</country>
+		<lat>47.2197</lat>
+		<lng>14.7647</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Red_Bull_Ring</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>71</circuitId>
+		<circuitRef>sochi</circuitRef>
+		<name>Sochi Autodrom</name>
+		<location>Sochi</location>
+		<country>Russia</country>
+		<lat>43.4057</lat>
+		<lng>39.9578</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Sochi_Autodrom</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>72</circuitId>
+		<circuitRef>port_imperial</circuitRef>
+		<name>Port Imperial Street Circuit</name>
+		<location>New Jersey</location>
+		<country>USA</country>
+		<lat>40.7769</lat>
+		<lng>-74.0111</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Port_Imperial_Street_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>73</circuitId>
+		<circuitRef>BAK</circuitRef>
+		<name>Baku City Circuit</name>
+		<location>Baku</location>
+		<country>Azerbaijan</country>
+		<lat>40.3725</lat>
+		<lng>49.8533</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Baku_City_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>74</circuitId>
+		<circuitRef>hanoi</circuitRef>
+		<name>Hanoi Street Circuit</name>
+		<location>Hanoi</location>
+		<country>Vietnam</country>
+		<lat>21.0166</lat>
+		<lng>105.766</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Hanoi_Street_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>75</circuitId>
+		<circuitRef>portimao</circuitRef>
+		<name>Autódromo Internacional do Algarve</name>
+		<location>Portimão</location>
+		<country>Portugal</country>
+		<lat>37.227</lat>
+		<lng>-8.6267</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Algarve_International_Circuit</url>
+	</Circuit>
+	<Circuit>
+		<circuitId>76</circuitId>
+		<circuitRef>mugello</circuitRef>
+		<name>Autodromo Internazionale del Mugello</name>
+		<location>Mugello</location>
+		<country>Italy</country>
+		<lat>43.9975</lat>
+		<lng>11.3719</lng>
+		<alt/>
+		<url>http://en.wikipedia.org/wiki/Mugello_Circuit</url>
+	</Circuit>
+</Circuits>
+

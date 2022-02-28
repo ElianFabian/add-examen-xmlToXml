@@ -1,0 +1,14 @@
+Crea el documento gp.xml.
+-------------------------
+Toma todas las temporadas (year) distintas de las que se dispone en races.xml.
+De estos nodos deben colgar los datos de las n carreras de la temporada.
+Ten en cuenta que con el circuitId tienes que “traer” algunos de los datos 
+del circuito y que está en circuits.xml, al menos el nombre, la localización y el país. (3 puntos).
+
+Además, para cada carrera tiene que verse la vuelta más rápida, el récord de este gran premio.
+Esto se obtiene desde lapTimes. (2 puntos).
+
+Tienes que sacar con el id de la carrera, de todas las vueltas que haya, la que se ha dado 
+en un tiempo menor, dando el id del piloto, la vuelta y el tiempo. (2 puntos).
+
+Con lo que tengas crea y guarda en disco gp.xml.
