@@ -210,12 +210,12 @@ public class XmlToXml
      */
     static void escribirXML(Document doc)
     {
-        Element rootElement = doc.createElement("Temporadas");
+        var rootElement = doc.createElement("Temporadas");
         doc.appendChild(rootElement);
 
         racesPorSeasons.forEach((year, racesList) ->
         {
-            Element temporada = doc.createElement("Temporada");
+            var temporada = doc.createElement("Temporada");
 
             racesList.forEach(race ->
             {
@@ -224,8 +224,9 @@ public class XmlToXml
                         race,
                         Set.of("date", "bestLapTime") // Atributos a ignorar
                 );
+                
                 // Se añade date por separado para ponerlo con el formato de interés (dd/MM/yyy)
-                Element nodoDate = doc.createElement("date");
+                var nodoDate = doc.createElement("date");
                 nodoDate.setTextContent(race.getDate());
                 nodoRace.appendChild(nodoDate);
 
@@ -233,32 +234,25 @@ public class XmlToXml
                 if (race.bestLapTime != null)
                 {
                     // Se añade por separado para que tenga el formato de interés (m:ss.SSS)
-                    Element nodoTime = doc.createElement("time");
+                    var nodoTime = doc.createElement("time");
                     nodoTime.setTextContent(race.bestLapTime.getTime());
 
-                    Element nodoBestLapTime = escritorXML.objetoANodo(
+                    var nodoBestLapTime = escritorXML.objetoANodo(
                             "bestLapTime",
                             race.bestLapTime,
                             Set.of("raceId", "time")
                     );
+                    
                     nodoBestLapTime.appendChild(nodoTime);
-
                     nodoRace.appendChild(nodoBestLapTime);
                 }
                 temporada.appendChild(nodoRace);
             });
+            
             temporada.setAttribute("year", year.toString());
-
             rootElement.appendChild(temporada);
         });
     }
-
-    /**
-     * Facilita el trabajo de obtener el texto de un determinado nodo.
-     */
-    static String getNodoTexto(Element nodo, String tag)
-    {
-        return nodo.getElementsByTagName(tag).item(0).getTextContent();
-    }
+    
     //endregion
 }
