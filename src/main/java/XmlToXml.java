@@ -224,11 +224,11 @@ public class XmlToXml
 
         racesPorSeasons.forEach((year, racesList) ->
         {
-            var temporada = doc.createElement("Temporada");
+            var nodoTemporada = doc.createElement("Temporada");
 
             racesList.forEach(race ->
             {
-                Element nodoRace = escritorXML.objetoANodo(
+                var nodoRace = escritorXML.objetoANodo(
                         "Race",
                         race,
                         race_atributosAIgnorar
@@ -255,11 +255,11 @@ public class XmlToXml
                     nodoBestLapTime.appendChild(nodoTime);
                     nodoRace.appendChild(nodoBestLapTime);
                 }
-                temporada.appendChild(nodoRace);
+                nodoTemporada.appendChild(nodoRace);
             });
 
-            temporada.setAttribute("year", year.toString());
-            rootElement.appendChild(temporada);
+            nodoTemporada.setAttribute("year", year.toString());
+            rootElement.appendChild(nodoTemporada);
         });
     }
 

@@ -5,7 +5,12 @@
             <id>1000</id>
             <year>2018</year>
             <round>12</round>
-            <circuit>Circuit{id=11, name='Hungaroring', location='Budapest', country='Hungary'}</circuit>
+            <circuit>
+                <id>11</id>
+                <name>Hungaroring</name>
+                <location>Budapest</location>
+                <country>Hungary</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Hungarian_Grand_Prix</url>
             <date>29/07/2018</date>
@@ -19,7 +24,12 @@
             <id>1001</id>
             <year>2018</year>
             <round>13</round>
-            <circuit>Circuit{id=13, name='Circuit de Spa-Francorchamps', location='Spa', country='Belgium'}</circuit>
+            <circuit>
+                <id>13</id>
+                <name>Circuit de Spa-Francorchamps</name>
+                <location>Spa</location>
+                <country>Belgium</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Belgian_Grand_Prix</url>
             <date>26/08/2018</date>
@@ -33,7 +43,12 @@
             <id>1002</id>
             <year>2018</year>
             <round>14</round>
-            <circuit>Circuit{id=14, name='Autodromo Nazionale di Monza', location='Monza', country='Italy'}</circuit>
+            <circuit>
+                <id>14</id>
+                <name>Autodromo Nazionale di Monza</name>
+                <location>Monza</location>
+                <country>Italy</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Italian_Grand_Prix</url>
             <date>02/09/2018</date>
@@ -47,7 +62,11 @@
             <id>1003</id>
             <year>2018</year>
             <round>15</round>
-            <circuit>Circuit{id=15, name='Marina Bay Street Circuit', location='Marina Bay', country='Singapore'}
+            <circuit>
+                <id>15</id>
+                <name>Marina Bay Street Circuit</name>
+                <location>Marina Bay</location>
+                <country>Singapore</country>
             </circuit>
             <time>12:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Singapore_Grand_Prix</url>
@@ -62,7 +81,12 @@
             <id>1004</id>
             <year>2018</year>
             <round>16</round>
-            <circuit>Circuit{id=71, name='Sochi Autodrom', location='Sochi', country='Russia'}</circuit>
+            <circuit>
+                <id>71</id>
+                <name>Sochi Autodrom</name>
+                <location>Sochi</location>
+                <country>Russia</country>
+            </circuit>
             <time>11:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Russian_Grand_Prix</url>
             <date>30/09/2018</date>
@@ -76,7 +100,12 @@
             <id>1005</id>
             <year>2018</year>
             <round>17</round>
-            <circuit>Circuit{id=22, name='Suzuka Circuit', location='Suzuka', country='Japan'}</circuit>
+            <circuit>
+                <id>22</id>
+                <name>Suzuka Circuit</name>
+                <location>Suzuka</location>
+                <country>Japan</country>
+            </circuit>
             <time>05:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Japanese_Grand_Prix</url>
             <date>07/10/2018</date>
@@ -90,7 +119,12 @@
             <id>1006</id>
             <year>2018</year>
             <round>18</round>
-            <circuit>Circuit{id=69, name='Circuit of the Americas', location='Austin', country='USA'}</circuit>
+            <circuit>
+                <id>69</id>
+                <name>Circuit of the Americas</name>
+                <location>Austin</location>
+                <country>USA</country>
+            </circuit>
             <time>18:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_United_States_Grand_Prix</url>
             <date>21/10/2018</date>
@@ -104,7 +138,11 @@
             <id>1007</id>
             <year>2018</year>
             <round>19</round>
-            <circuit>Circuit{id=32, name='Autódromo Hermanos Rodríguez', location='Mexico City', country='Mexico'}
+            <circuit>
+                <id>32</id>
+                <name>Autódromo Hermanos Rodríguez</name>
+                <location>Mexico City</location>
+                <country>Mexico</country>
             </circuit>
             <time>19:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Mexican_Grand_Prix</url>
@@ -119,7 +157,12 @@
             <id>1008</id>
             <year>2018</year>
             <round>20</round>
-            <circuit>Circuit{id=18, name='Autódromo José Carlos Pace', location='São Paulo', country='Brazil'}</circuit>
+            <circuit>
+                <id>18</id>
+                <name>Autódromo José Carlos Pace</name>
+                <location>São Paulo</location>
+                <country>Brazil</country>
+            </circuit>
             <time>17:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Brazilian_Grand_Prix</url>
             <date>11/11/2018</date>
@@ -133,7 +176,12 @@
             <id>1009</id>
             <year>2018</year>
             <round>21</round>
-            <circuit>Circuit{id=24, name='Yas Marina Circuit', location='Abu Dhabi', country='UAE'}</circuit>
+            <circuit>
+                <id>24</id>
+                <name>Yas Marina Circuit</name>
+                <location>Abu Dhabi</location>
+                <country>UAE</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2018_Abu_Dhabi_Grand_Prix</url>
             <date>25/11/2018</date>
@@ -149,7 +197,11 @@
             <id>1024</id>
             <year>2019</year>
             <round>15</round>
-            <circuit>Circuit{id=15, name='Marina Bay Street Circuit', location='Marina Bay', country='Singapore'}
+            <circuit>
+                <id>15</id>
+                <name>Marina Bay Street Circuit</name>
+                <location>Marina Bay</location>
+                <country>Singapore</country>
             </circuit>
             <time>12:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Singapore_Grand_Prix</url>
@@ -164,7 +216,12 @@
             <id>1025</id>
             <year>2019</year>
             <round>16</round>
-            <circuit>Circuit{id=71, name='Sochi Autodrom', location='Sochi', country='Russia'}</circuit>
+            <circuit>
+                <id>71</id>
+                <name>Sochi Autodrom</name>
+                <location>Sochi</location>
+                <country>Russia</country>
+            </circuit>
             <time>11:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Russian_Grand_Prix</url>
             <date>29/09/2019</date>
@@ -178,7 +235,12 @@
             <id>1026</id>
             <year>2019</year>
             <round>17</round>
-            <circuit>Circuit{id=22, name='Suzuka Circuit', location='Suzuka', country='Japan'}</circuit>
+            <circuit>
+                <id>22</id>
+                <name>Suzuka Circuit</name>
+                <location>Suzuka</location>
+                <country>Japan</country>
+            </circuit>
             <time>05:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Japanese_Grand_Prix</url>
             <date>13/10/2019</date>
@@ -192,7 +254,11 @@
             <id>1027</id>
             <year>2019</year>
             <round>18</round>
-            <circuit>Circuit{id=32, name='Autódromo Hermanos Rodríguez', location='Mexico City', country='Mexico'}
+            <circuit>
+                <id>32</id>
+                <name>Autódromo Hermanos Rodríguez</name>
+                <location>Mexico City</location>
+                <country>Mexico</country>
             </circuit>
             <time>19:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Mexican_Grand_Prix</url>
@@ -207,7 +273,12 @@
             <id>1028</id>
             <year>2019</year>
             <round>19</round>
-            <circuit>Circuit{id=69, name='Circuit of the Americas', location='Austin', country='USA'}</circuit>
+            <circuit>
+                <id>69</id>
+                <name>Circuit of the Americas</name>
+                <location>Austin</location>
+                <country>USA</country>
+            </circuit>
             <time>19:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_United_States_Grand_Prix</url>
             <date>03/11/2019</date>
@@ -221,7 +292,12 @@
             <id>1029</id>
             <year>2019</year>
             <round>20</round>
-            <circuit>Circuit{id=18, name='Autódromo José Carlos Pace', location='São Paulo', country='Brazil'}</circuit>
+            <circuit>
+                <id>18</id>
+                <name>Autódromo José Carlos Pace</name>
+                <location>São Paulo</location>
+                <country>Brazil</country>
+            </circuit>
             <time>17:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Brazilian_Grand_Prix</url>
             <date>17/11/2019</date>
@@ -235,7 +311,12 @@
             <id>1030</id>
             <year>2019</year>
             <round>21</round>
-            <circuit>Circuit{id=24, name='Yas Marina Circuit', location='Abu Dhabi', country='UAE'}</circuit>
+            <circuit>
+                <id>24</id>
+                <name>Yas Marina Circuit</name>
+                <location>Abu Dhabi</location>
+                <country>UAE</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Abu_Dhabi_Grand_Prix</url>
             <date>01/12/2019</date>
@@ -249,7 +330,11 @@
             <id>1010</id>
             <year>2019</year>
             <round>1</round>
-            <circuit>Circuit{id=1, name='Albert Park Grand Prix Circuit', location='Melbourne', country='Australia'}
+            <circuit>
+                <id>1</id>
+                <name>Albert Park Grand Prix Circuit</name>
+                <location>Melbourne</location>
+                <country>Australia</country>
             </circuit>
             <time>05:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Australian_Grand_Prix</url>
@@ -264,7 +349,12 @@
             <id>1011</id>
             <year>2019</year>
             <round>2</round>
-            <circuit>Circuit{id=3, name='Bahrain International Circuit', location='Sakhir', country='Bahrain'}</circuit>
+            <circuit>
+                <id>3</id>
+                <name>Bahrain International Circuit</name>
+                <location>Sakhir</location>
+                <country>Bahrain</country>
+            </circuit>
             <time>15:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Bahrain_Grand_Prix</url>
             <date>31/03/2019</date>
@@ -278,7 +368,11 @@
             <id>1012</id>
             <year>2019</year>
             <round>3</round>
-            <circuit>Circuit{id=17, name='Shanghai International Circuit', location='Shanghai', country='China'}
+            <circuit>
+                <id>17</id>
+                <name>Shanghai International Circuit</name>
+                <location>Shanghai</location>
+                <country>China</country>
             </circuit>
             <time>06:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Chinese_Grand_Prix</url>
@@ -293,7 +387,12 @@
             <id>1013</id>
             <year>2019</year>
             <round>4</round>
-            <circuit>Circuit{id=73, name='Baku City Circuit', location='Baku', country='Azerbaijan'}</circuit>
+            <circuit>
+                <id>73</id>
+                <name>Baku City Circuit</name>
+                <location>Baku</location>
+                <country>Azerbaijan</country>
+            </circuit>
             <time>12:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Azerbaijan_Grand_Prix</url>
             <date>28/04/2019</date>
@@ -307,7 +406,11 @@
             <id>1014</id>
             <year>2019</year>
             <round>5</round>
-            <circuit>Circuit{id=4, name='Circuit de Barcelona-Catalunya', location='Montmeló', country='Spain'}
+            <circuit>
+                <id>4</id>
+                <name>Circuit de Barcelona-Catalunya</name>
+                <location>Montmeló</location>
+                <country>Spain</country>
             </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Spanish_Grand_Prix</url>
@@ -322,7 +425,12 @@
             <id>1015</id>
             <year>2019</year>
             <round>6</round>
-            <circuit>Circuit{id=6, name='Circuit de Monaco', location='Monte-Carlo', country='Monaco'}</circuit>
+            <circuit>
+                <id>6</id>
+                <name>Circuit de Monaco</name>
+                <location>Monte-Carlo</location>
+                <country>Monaco</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Monaco_Grand_Prix</url>
             <date>26/05/2019</date>
@@ -336,7 +444,12 @@
             <id>1016</id>
             <year>2019</year>
             <round>7</round>
-            <circuit>Circuit{id=7, name='Circuit Gilles Villeneuve', location='Montreal', country='Canada'}</circuit>
+            <circuit>
+                <id>7</id>
+                <name>Circuit Gilles Villeneuve</name>
+                <location>Montreal</location>
+                <country>Canada</country>
+            </circuit>
             <time>18:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Canadian_Grand_Prix</url>
             <date>09/06/2019</date>
@@ -350,7 +463,12 @@
             <id>1017</id>
             <year>2019</year>
             <round>8</round>
-            <circuit>Circuit{id=34, name='Circuit Paul Ricard', location='Le Castellet', country='France'}</circuit>
+            <circuit>
+                <id>34</id>
+                <name>Circuit Paul Ricard</name>
+                <location>Le Castellet</location>
+                <country>France</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_French_Grand_Prix</url>
             <date>23/06/2019</date>
@@ -364,7 +482,12 @@
             <id>1018</id>
             <year>2019</year>
             <round>9</round>
-            <circuit>Circuit{id=70, name='Red Bull Ring', location='Spielburg', country='Austria'}</circuit>
+            <circuit>
+                <id>70</id>
+                <name>Red Bull Ring</name>
+                <location>Spielburg</location>
+                <country>Austria</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Austrian_Grand_Prix</url>
             <date>30/06/2019</date>
@@ -378,7 +501,12 @@
             <id>1019</id>
             <year>2019</year>
             <round>10</round>
-            <circuit>Circuit{id=9, name='Silverstone Circuit', location='Silverstone', country='UK'}</circuit>
+            <circuit>
+                <id>9</id>
+                <name>Silverstone Circuit</name>
+                <location>Silverstone</location>
+                <country>UK</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_British_Grand_Prix</url>
             <date>14/07/2019</date>
@@ -392,7 +520,12 @@
             <id>1020</id>
             <year>2019</year>
             <round>11</round>
-            <circuit>Circuit{id=10, name='Hockenheimring', location='Hockenheim', country='Germany'}</circuit>
+            <circuit>
+                <id>10</id>
+                <name>Hockenheimring</name>
+                <location>Hockenheim</location>
+                <country>Germany</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_German_Grand_Prix</url>
             <date>28/07/2019</date>
@@ -406,7 +539,12 @@
             <id>1021</id>
             <year>2019</year>
             <round>12</round>
-            <circuit>Circuit{id=11, name='Hungaroring', location='Budapest', country='Hungary'}</circuit>
+            <circuit>
+                <id>11</id>
+                <name>Hungaroring</name>
+                <location>Budapest</location>
+                <country>Hungary</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Hungarian_Grand_Prix</url>
             <date>04/08/2019</date>
@@ -420,7 +558,12 @@
             <id>1022</id>
             <year>2019</year>
             <round>13</round>
-            <circuit>Circuit{id=13, name='Circuit de Spa-Francorchamps', location='Spa', country='Belgium'}</circuit>
+            <circuit>
+                <id>13</id>
+                <name>Circuit de Spa-Francorchamps</name>
+                <location>Spa</location>
+                <country>Belgium</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Belgian_Grand_Prix</url>
             <date>01/09/2019</date>
@@ -434,7 +577,12 @@
             <id>1023</id>
             <year>2019</year>
             <round>14</round>
-            <circuit>Circuit{id=14, name='Autodromo Nazionale di Monza', location='Monza', country='Italy'}</circuit>
+            <circuit>
+                <id>14</id>
+                <name>Autodromo Nazionale di Monza</name>
+                <location>Monza</location>
+                <country>Italy</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2019_Italian_Grand_Prix</url>
             <date>08/09/2019</date>
@@ -450,7 +598,12 @@
             <id>1031</id>
             <year>2020</year>
             <round>1</round>
-            <circuit>Circuit{id=70, name='Red Bull Ring', location='Spielburg', country='Austria'}</circuit>
+            <circuit>
+                <id>70</id>
+                <name>Red Bull Ring</name>
+                <location>Spielburg</location>
+                <country>Austria</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Austrian_Grand_Prix</url>
             <date>05/07/2020</date>
@@ -464,7 +617,12 @@
             <id>1032</id>
             <year>2020</year>
             <round>2</round>
-            <circuit>Circuit{id=70, name='Red Bull Ring', location='Spielburg', country='Austria'}</circuit>
+            <circuit>
+                <id>70</id>
+                <name>Red Bull Ring</name>
+                <location>Spielburg</location>
+                <country>Austria</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Styrian_Grand_Prix</url>
             <date>12/07/2020</date>
@@ -478,7 +636,12 @@
             <id>1033</id>
             <year>2020</year>
             <round>3</round>
-            <circuit>Circuit{id=11, name='Hungaroring', location='Budapest', country='Hungary'}</circuit>
+            <circuit>
+                <id>11</id>
+                <name>Hungaroring</name>
+                <location>Budapest</location>
+                <country>Hungary</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Hungarian_Grand_Prix</url>
             <date>19/07/2020</date>
@@ -492,7 +655,12 @@
             <id>1034</id>
             <year>2020</year>
             <round>4</round>
-            <circuit>Circuit{id=9, name='Silverstone Circuit', location='Silverstone', country='UK'}</circuit>
+            <circuit>
+                <id>9</id>
+                <name>Silverstone Circuit</name>
+                <location>Silverstone</location>
+                <country>UK</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_British_Grand_Prix</url>
             <date>02/08/2020</date>
@@ -506,7 +674,12 @@
             <id>1035</id>
             <year>2020</year>
             <round>5</round>
-            <circuit>Circuit{id=9, name='Silverstone Circuit', location='Silverstone', country='UK'}</circuit>
+            <circuit>
+                <id>9</id>
+                <name>Silverstone Circuit</name>
+                <location>Silverstone</location>
+                <country>UK</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/70th_Anniversary_Grand_Prix</url>
             <date>09/08/2020</date>
@@ -520,7 +693,11 @@
             <id>1036</id>
             <year>2020</year>
             <round>6</round>
-            <circuit>Circuit{id=4, name='Circuit de Barcelona-Catalunya', location='Montmeló', country='Spain'}
+            <circuit>
+                <id>4</id>
+                <name>Circuit de Barcelona-Catalunya</name>
+                <location>Montmeló</location>
+                <country>Spain</country>
             </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Spanish_Grand_Prix</url>
@@ -535,7 +712,12 @@
             <id>1037</id>
             <year>2020</year>
             <round>7</round>
-            <circuit>Circuit{id=13, name='Circuit de Spa-Francorchamps', location='Spa', country='Belgium'}</circuit>
+            <circuit>
+                <id>13</id>
+                <name>Circuit de Spa-Francorchamps</name>
+                <location>Spa</location>
+                <country>Belgium</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Belgian_Grand_Prix</url>
             <date>30/08/2020</date>
@@ -549,7 +731,12 @@
             <id>1038</id>
             <year>2020</year>
             <round>8</round>
-            <circuit>Circuit{id=14, name='Autodromo Nazionale di Monza', location='Monza', country='Italy'}</circuit>
+            <circuit>
+                <id>14</id>
+                <name>Autodromo Nazionale di Monza</name>
+                <location>Monza</location>
+                <country>Italy</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Italian_Grand_Prix</url>
             <date>06/09/2020</date>
@@ -563,7 +750,11 @@
             <id>1039</id>
             <year>2020</year>
             <round>9</round>
-            <circuit>Circuit{id=76, name='Autodromo Internazionale del Mugello', location='Mugello', country='Italy'}
+            <circuit>
+                <id>76</id>
+                <name>Autodromo Internazionale del Mugello</name>
+                <location>Mugello</location>
+                <country>Italy</country>
             </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Tuscan_Grand_Prix</url>
@@ -578,7 +769,12 @@
             <id>1040</id>
             <year>2020</year>
             <round>10</round>
-            <circuit>Circuit{id=71, name='Sochi Autodrom', location='Sochi', country='Russia'}</circuit>
+            <circuit>
+                <id>71</id>
+                <name>Sochi Autodrom</name>
+                <location>Sochi</location>
+                <country>Russia</country>
+            </circuit>
             <time>11:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Russian_Grand_Prix</url>
             <date>27/09/2020</date>
@@ -592,7 +788,12 @@
             <id>1041</id>
             <year>2020</year>
             <round>11</round>
-            <circuit>Circuit{id=20, name='Nürburgring', location='Nürburg', country='Germany'}</circuit>
+            <circuit>
+                <id>20</id>
+                <name>Nürburgring</name>
+                <location>Nürburg</location>
+                <country>Germany</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Eifel_Grand_Prix</url>
             <date>11/10/2020</date>
@@ -606,8 +807,11 @@
             <id>1042</id>
             <year>2020</year>
             <round>12</round>
-            <circuit>Circuit{id=75, name='Autódromo Internacional do Algarve', location='Portimão',
-                country='Portugal'}
+            <circuit>
+                <id>75</id>
+                <name>Autódromo Internacional do Algarve</name>
+                <location>Portimão</location>
+                <country>Portugal</country>
             </circuit>
             <time>12:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Portuguese_Grand_Prix</url>
@@ -622,7 +826,12 @@
             <id>1043</id>
             <year>2020</year>
             <round>13</round>
-            <circuit>Circuit{id=21, name='Autodromo Enzo e Dino Ferrari', location='Imola', country='Italy'}</circuit>
+            <circuit>
+                <id>21</id>
+                <name>Autodromo Enzo e Dino Ferrari</name>
+                <location>Imola</location>
+                <country>Italy</country>
+            </circuit>
             <time>12:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Emilia_Romagna_Grand_Prix</url>
             <date>01/11/2020</date>
@@ -636,7 +845,12 @@
             <id>1044</id>
             <year>2020</year>
             <round>14</round>
-            <circuit>Circuit{id=5, name='Istanbul Park', location='Istanbul', country='Turkey'}</circuit>
+            <circuit>
+                <id>5</id>
+                <name>Istanbul Park</name>
+                <location>Istanbul</location>
+                <country>Turkey</country>
+            </circuit>
             <time>10:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Turkish_Grand_Prix</url>
             <date>15/11/2020</date>
@@ -650,7 +864,12 @@
             <id>1045</id>
             <year>2020</year>
             <round>15</round>
-            <circuit>Circuit{id=3, name='Bahrain International Circuit', location='Sakhir', country='Bahrain'}</circuit>
+            <circuit>
+                <id>3</id>
+                <name>Bahrain International Circuit</name>
+                <location>Sakhir</location>
+                <country>Bahrain</country>
+            </circuit>
             <time>14:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Bahrain_Grand_Prix</url>
             <date>29/11/2020</date>
@@ -664,7 +883,12 @@
             <id>1046</id>
             <year>2020</year>
             <round>16</round>
-            <circuit>Circuit{id=3, name='Bahrain International Circuit', location='Sakhir', country='Bahrain'}</circuit>
+            <circuit>
+                <id>3</id>
+                <name>Bahrain International Circuit</name>
+                <location>Sakhir</location>
+                <country>Bahrain</country>
+            </circuit>
             <time>17:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Sakhir_Grand_Prix</url>
             <date>06/12/2020</date>
@@ -678,7 +902,12 @@
             <id>1047</id>
             <year>2020</year>
             <round>17</round>
-            <circuit>Circuit{id=24, name='Yas Marina Circuit', location='Abu Dhabi', country='UAE'}</circuit>
+            <circuit>
+                <id>24</id>
+                <name>Yas Marina Circuit</name>
+                <location>Abu Dhabi</location>
+                <country>UAE</country>
+            </circuit>
             <time>13:10:00</time>
             <url>https://en.wikipedia.org/wiki/2020_Abu_Dhabi_Grand_Prix</url>
             <date>13/12/2020</date>
