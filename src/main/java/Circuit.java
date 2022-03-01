@@ -1,3 +1,5 @@
+import archivos.EscritorXML;
+
 public class Circuit implements EscritorXML.ObjetoXML
 {
     //region Atributos

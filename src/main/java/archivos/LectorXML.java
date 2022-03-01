@@ -1,4 +1,5 @@
-import org.w3c.dom.Document;
+package archivos;
+
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
@@ -27,7 +28,7 @@ public class LectorXML
         }
     }
 
-    static class Nodo
+    public static class Nodo
     {
         public Element elemento;
 
