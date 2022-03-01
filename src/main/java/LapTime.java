@@ -2,7 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class LapTime implements GeneradorXML.ObjetoXML
+public class LapTime implements EscritorXML.ObjetoXML
 {
     //region Atributos
     int raceId;

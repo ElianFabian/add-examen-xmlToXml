@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 
 //Toma todas las temporadas (year) distintas de las que se dispone en races.xml.
@@ -32,9 +33,9 @@ public class XmlToXml
     //region Atributos
     static DocumentBuilder docBuilder = null;
     static Document docGP;
-    static GeneradorXML generadorXML;
+    static EscritorXML escritorXML;
 
-    static final String xmlDestino = "gp.xml";
+    static final String XML_DESTINO = "gp.xml";
 
     static HashMap<Integer, Circuit> circuitsHashMap;
     static HashMap<Integer, Race> racesHasMap;
@@ -48,7 +49,7 @@ public class XmlToXml
         docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         docGP = docBuilder.newDocument();
 
-        generadorXML = new GeneradorXML(xmlDestino, docGP);
+        escritorXML = new EscritorXML(XML_DESTINO, docGP);
 
         long start = System.currentTimeMillis();
 
@@ -62,7 +63,7 @@ public class XmlToXml
         //endregion
 
         escribirXML(docGP);
-        generadorXML.guardarObjetoXMLEnFichero();
+        escritorXML.guardarObjetoXMLEnFichero();
 
         long finish = System.currentTimeMillis();
 
@@ -70,38 +71,34 @@ public class XmlToXml
     }
 
     //region Métodos
+    
     /**
      * Devuelve un HasMap con todos los circuitos agrupados por su id.
      */
     static HashMap<Integer, Circuit> obtenerCircuits() throws IOException, SAXException
     {
-        HashMap<Integer, Circuit> hashMap = new HashMap<>();
-
         final String xml = "circuits.xml";
+
         final Document doc = docBuilder.parse(xml);
+        var lectorXML = new LectorXML(xml);
+
+        HashMap<Integer, Circuit> hashMap = new HashMap<>();
 
         NodeList nodeList = doc.getElementsByTagName("Circuit");
 
-        for (int i = 0; i < nodeList.getLength(); i++)
+        lectorXML.leerNodos(nodeList, nodo ->
         {
-            // Hacerlo de tipo Element en lugar de Node nos da la ventaja de poder obtener los nodos hijo
-            // a partir del nombre de su etiqueta
-            Element nodoCircuit = (Element) nodeList.item(i);
+            int id = nodo.getTextoInt("circuitId");
+            String name = nodo.getTexto("name");
+            String location = nodo.getTexto("location");
+            String country = nodo.getTexto("country");
 
-            //region Se obtienen los valores del xml
-            int id = Integer.parseInt(getNodoTexto(nodoCircuit, "circuitId"));
-            String name = getNodoTexto(nodoCircuit, "name");
-            String location = getNodoTexto(nodoCircuit, "location");
-            String country = getNodoTexto(nodoCircuit, "country");
-            //endregion
+            hashMap.put(id, new Circuit(id, name, location, country));
+        });
 
-            hashMap.put(
-                    id,
-                    new Circuit(id, name, location, country)
-            );
-        }
         return hashMap;
     }
+    
     /**
      * Devuelve un HasMap con todos las carreras agrupadas por su id.
      */
@@ -110,32 +107,32 @@ public class XmlToXml
         HashMap<Integer, Race> hashMap = new HashMap<>();
 
         final String xml = "races.xml";
+
+        var lectorXML = new LectorXML(xml);
         final Document doc = docBuilder.parse(xml);
 
         NodeList nodeList = doc.getElementsByTagName("Race");
 
-        for (int i = 0; i < nodeList.getLength(); i++)
+        lectorXML.leerNodos(nodeList, nodo ->
         {
-            Element nodo = (Element) nodeList.item(i);
-
-            //region Se obtienen los valores del xml
-            int id = Integer.parseInt(getNodoTexto(nodo, "raceId"));
-            int circuitId = Integer.parseInt(getNodoTexto(nodo, "circuitId"));
-            int year = Integer.parseInt(getNodoTexto(nodo, "year"));
-            int round = Integer.parseInt(getNodoTexto(nodo, "round"));
-            String date = getNodoTexto(nodo, "date");
-            String time = getNodoTexto(nodo, "time");
-            String url = getNodoTexto(nodo, "url");
-            //endregion
+            int id = nodo.getTextoInt("raceId");
+            int circuitId = nodo.getTextoInt("circuitId");
+            int year = nodo.getTextoInt("year");
+            int round = nodo.getTextoInt("round");
+            String date = nodo.getTexto("date");
+            String time = nodo.getTexto("time");
+            String url = nodo.getTexto("url");
 
             var race = new Race(id, year, round, date, time, url);
             race.circuit = circuitsHashMap.get(circuitId);
             race.bestLapTime = bestLapTimesHasMap.get(id);
 
             hashMap.put(id, race);
-        }
+        });
+
         return hashMap;
     }
+    
     /**
      * Devuelve un HasMap de todas las vueltas de cada carrera.
      */
@@ -144,20 +141,18 @@ public class XmlToXml
         HashMap<Integer, List<LapTime>> hashMap = new HashMap<>();
 
         final String xml = "lapTimes.xml";
+
+        var lectorXML = new LectorXML(xml);
         final Document doc = docBuilder.parse(xml);
 
         NodeList nodeList = doc.getElementsByTagName("lapTime");
 
-        for (int i = 0; i < nodeList.getLength(); i++)
+        lectorXML.leerNodos(nodeList, nodo ->
         {
-            Element nodo = (Element) nodeList.item(i);
-
-            //region Se obtienen los valores del xml
-            int raceId = Integer.parseInt(getNodoTexto(nodo, "raceId"));
-            int driverId = Integer.parseInt(getNodoTexto(nodo, "driverId"));
-            int lap = Integer.parseInt(getNodoTexto(nodo, "lap"));
-            String time = getNodoTexto(nodo, "time");
-            //endregion
+            int raceId = nodo.getTextoInt("raceId");
+            int driverId = nodo.getTextoInt("driverId");
+            int lap = nodo.getTextoInt("lap");
+            String time = nodo.getTexto("time");
 
             var lapTime = new LapTime(raceId, driverId, lap, time);
 
@@ -165,9 +160,11 @@ public class XmlToXml
             hashMap.computeIfAbsent(raceId, v -> new ArrayList<>());
 
             hashMap.get(raceId).add(lapTime);
-        }
+        });
+
         return hashMap;
     }
+
     /**
      * Devuelve un HasMap con la vuelta más rápida de cada carrera.
      */
@@ -222,10 +219,10 @@ public class XmlToXml
 
             racesList.forEach(race ->
             {
-                Element nodoRace = generadorXML.objetoANodo(
+                Element nodoRace = escritorXML.objetoANodo(
                         "Race",
                         race,
-                        new ArrayList<>(List.of("date", "bestLapTime")) // Atributos a ignorar
+                        Set.of("date", "bestLapTime") // Atributos a ignorar
                 );
                 // Se añade date por separado para ponerlo con el formato de interés (dd/MM/yyy)
                 Element nodoDate = doc.createElement("date");
@@ -239,10 +236,10 @@ public class XmlToXml
                     Element nodoTime = doc.createElement("time");
                     nodoTime.setTextContent(race.bestLapTime.getTime());
 
-                    Element nodoBestLapTime = generadorXML.objetoANodo(
+                    Element nodoBestLapTime = escritorXML.objetoANodo(
                             "bestLapTime",
                             race.bestLapTime,
-                            new ArrayList<>(List.of("raceId", "time"))
+                            Set.of("raceId", "time")
                     );
                     nodoBestLapTime.appendChild(nodoTime);
 

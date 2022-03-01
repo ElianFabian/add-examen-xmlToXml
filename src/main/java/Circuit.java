@@ -1,4 +1,4 @@
-public class Circuit implements GeneradorXML.ObjetoXML
+public class Circuit implements EscritorXML.ObjetoXML
 {
     //region Atributos
     int id;
