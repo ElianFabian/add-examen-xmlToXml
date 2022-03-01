@@ -181,7 +181,7 @@ public class XmlToXml
     }
 
     /**
-     * Dada una lista de lapTime devuelve el lapTime con menor tiempo.
+     * Dada una lista de lapTime devuelve el lapTime con menor el tiempo.
      */
     private static LapTime obtenerElMejorLapTime(List<LapTime> lapTimeList)
     {
