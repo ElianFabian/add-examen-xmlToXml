@@ -1,5 +1,6 @@
 package archivos;
 
+import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
@@ -8,15 +9,21 @@ import java.util.function.Consumer;
 public class LectorXML
 {
     String ficheroXML;
+    Document doc;
 
-    public LectorXML(String ficheroXML)
+    public LectorXML(String ficheroXML, Document doc)
     {
         this.ficheroXML = ficheroXML;
+        this.doc = doc;
     }
 
-    public void leerNodos(NodeList nodeList, Consumer<Nodo> nodoConsumer)
+    /**
+     * Lee todos los nodos que tengan el nombre indicado.
+     */
+    public void leerNodosPorNombre(String nodoNombre, Consumer<Nodo> nodoConsumer)
     {
         Nodo nodo = new Nodo();
+        NodeList nodeList = doc.getElementsByTagName(nodoNombre);
         
         for (int i = 0; i < nodeList.getLength(); i++)
         {

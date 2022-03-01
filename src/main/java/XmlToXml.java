@@ -2,7 +2,6 @@ import archivos.EscritorXML;
 import archivos.LectorXML;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -77,18 +76,16 @@ public class XmlToXml
     /**
      * Devuelve un HasMap con todos los circuitos agrupados por su id.
      */
-    static HashMap<Integer, Circuit> obtenerCircuits() throws IOException, SAXException
+    private static HashMap<Integer, Circuit> obtenerCircuits() throws IOException, SAXException
     {
         final String xml = "circuits.xml";
 
         final Document doc = docBuilder.parse(xml);
-        var lectorXML = new LectorXML(xml);
 
+        var lectorXML = new LectorXML(xml, doc);
         HashMap<Integer, Circuit> hashMap = new HashMap<>();
-
-        NodeList nodeList = doc.getElementsByTagName("Circuit");
-
-        lectorXML.leerNodos(nodeList, nodo ->
+        
+        lectorXML.leerNodosPorNombre("Circuit", nodo ->
         {
             int id = nodo.getTextoInt("circuitId");
             String name = nodo.getTexto("name");
@@ -104,18 +101,16 @@ public class XmlToXml
     /**
      * Devuelve un HasMap con todos las carreras agrupadas por su id.
      */
-    static HashMap<Integer, Race> obtenerRaces(HashMap<Integer, Circuit> circuitsHashMap, HashMap<Integer, LapTime> bestLapTimesHasMap) throws IOException, SAXException
+    private static HashMap<Integer, Race> obtenerRaces(HashMap<Integer, Circuit> circuitsHashMap, HashMap<Integer, LapTime> bestLapTimesHasMap) throws IOException, SAXException
     {
         HashMap<Integer, Race> hashMap = new HashMap<>();
 
         final String xml = "races.xml";
 
-        var lectorXML = new LectorXML(xml);
         final Document doc = docBuilder.parse(xml);
-
-        NodeList nodeList = doc.getElementsByTagName("Race");
-
-        lectorXML.leerNodos(nodeList, nodo ->
+        var lectorXML = new LectorXML(xml, doc);
+        
+        lectorXML.leerNodosPorNombre("Race", nodo ->
         {
             int id = nodo.getTextoInt("raceId");
             int circuitId = nodo.getTextoInt("circuitId");
@@ -138,18 +133,16 @@ public class XmlToXml
     /**
      * Devuelve un HasMap de todas las vueltas de cada carrera.
      */
-    static HashMap<Integer, List<LapTime>> obtenerLapTimes() throws IOException, SAXException
+    private static HashMap<Integer, List<LapTime>> obtenerLapTimes() throws IOException, SAXException
     {
         HashMap<Integer, List<LapTime>> hashMap = new HashMap<>();
 
         final String xml = "lapTimes.xml";
 
-        var lectorXML = new LectorXML(xml);
         final Document doc = docBuilder.parse(xml);
-
-        NodeList nodeList = doc.getElementsByTagName("lapTime");
-
-        lectorXML.leerNodos(nodeList, nodo ->
+        var lectorXML = new LectorXML(xml, doc);
+        
+        lectorXML.leerNodosPorNombre("lapTime", nodo ->
         {
             int raceId = nodo.getTextoInt("raceId");
             int driverId = nodo.getTextoInt("driverId");
@@ -170,31 +163,42 @@ public class XmlToXml
     /**
      * Devuelve un HasMap con la vuelta más rápida de cada carrera.
      */
-    static HashMap<Integer, LapTime> obtenerVueltaMasRapidaDeCadaCarrera(HashMap<Integer, List<LapTime>> lapTimeHashMap)
+    private static HashMap<Integer, LapTime> obtenerVueltaMasRapidaDeCadaCarrera(HashMap<Integer, List<LapTime>> lapTimeHashMap)
     {
         HashMap<Integer, LapTime> hashMap = new HashMap<>();
 
         lapTimeHashMap.forEach((raceId, lapTimeList) ->
         {
-            LapTime bestLapTime = null;
-            long bestTime = Long.MAX_VALUE;
-
-            for (var lapTime : lapTimeList)
-            {
-                if (bestTime > lapTime.time.getTime())
-                {
-                    bestTime = lapTime.time.getTime();
-                    bestLapTime = lapTime;
-                }
-            }
+            var bestLapTime = obtenerElMejorLapTime(lapTimeList);
+            
             hashMap.put(raceId, bestLapTime);
         });
         return hashMap;
     }
+
+    /**
+     * Dada una lista de lapTime devuelve el lapTime con menor tiempo.
+     */
+    private static LapTime obtenerElMejorLapTime(List<LapTime> lapTimeList)
+    {
+        LapTime bestLapTime = null;
+        long bestTime = Long.MAX_VALUE;
+
+        for (var lapTime : lapTimeList)
+        {
+            if (bestTime > lapTime.time.getTime())
+            {
+                bestTime = lapTime.time.getTime();
+                bestLapTime = lapTime;
+            }
+        }
+        return bestLapTime;
+    }
+    
     /**
      * Devuelve un HashMap de listas de carreras agrupadas por temporada
      */
-    static HashMap<Integer, List<Race>> obtenerRacesPorSeasons(HashMap<Integer, Race> racesHasMap)
+    private static HashMap<Integer, List<Race>> obtenerRacesPorSeasons(HashMap<Integer, Race> racesHasMap)
     {
         HashMap<Integer, List<Race>> hashMap = new HashMap<>();
 
@@ -210,7 +214,7 @@ public class XmlToXml
     /**
      * Pasa los objetos a XML.
      */
-    static void escribirXML(Document doc)
+    private static void escribirXML(Document doc)
     {
         var rootElement = doc.createElement("Temporadas");
         doc.appendChild(rootElement);
