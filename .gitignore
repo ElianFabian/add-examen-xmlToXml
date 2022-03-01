@@ -61,4 +61,4 @@ atlassian-ide-plugin.xml
 # *.iml
 # modules.xml
 
-*.xml
+target/
