@@ -62,6 +62,7 @@ atlassian-ide-plugin.xml
 # modules.xml
 
 *.xml
+*.class
 
 
 target/
