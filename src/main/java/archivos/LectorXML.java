@@ -11,6 +11,42 @@ public class LectorXML
     String ficheroXML;
     Document doc;
 
+    public static class Nodo
+    {
+        public Element elemento;
+
+        //region Constructores
+        public Nodo(Element node)
+        {
+            this.elemento = node;
+        }
+
+        public Nodo() {}
+        //endregion
+
+        //region Métodos
+        public String getTexto(String childName)
+        {
+            return elemento.getElementsByTagName(childName).item(0).getTextContent();
+        }
+
+        public int getTextoInt(String childName)
+        {
+            return Integer.parseInt(getTexto(childName));
+        }
+
+        public float getTextoFloat(String childName)
+        {
+            return Float.parseFloat(getTexto(childName));
+        }
+
+        public String getAtributo(String name)
+        {
+            return elemento.getAttribute(name);
+        }
+        //endregion
+    }
+
     public LectorXML(String ficheroXML, Document doc)
     {
         this.ficheroXML = ficheroXML;
@@ -33,41 +69,5 @@ public class LectorXML
 
             nodoConsumer.accept(nodo);
         }
-    }
-
-    public static class Nodo
-    {
-        public Element elemento;
-
-        //region Constructores
-        public Nodo(Element node)
-        {
-            this.elemento = node;
-        }
-        
-        public Nodo() {}
-        //endregion
-        
-        //region Métodos
-        public String getTexto(String childName)
-        {
-            return elemento.getElementsByTagName(childName).item(0).getTextContent();
-        }
-        
-        public int getTextoInt(String childName)
-        {
-            return Integer.parseInt(getTexto(childName));
-        }
-        
-        public float getTextoFloat(String childName)
-        {
-            return Float.parseFloat(getTexto(childName));
-        }
-        
-        public String getAtributo(String name)
-        {
-            return elemento.getAttribute(name);
-        }
-        //endregion
     }
 }

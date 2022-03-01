@@ -1,7 +1,6 @@
 import archivos.EscritorXML;
 import archivos.LectorXML;
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -29,6 +28,12 @@ import java.util.Set;
 //        Con lo que tengas crea y guarda en disco gp.xml.
 
 
+// Por cuestión de legibilidad del código todas las Excepciones se lanzan al Main para que este las lance también
+// y así se evita try-catch's que ensucian el código.
+
+// Cabe mencionar que en este código no se usa el estándar de getters y setters,
+// sino que se utilizan directamente las propiedades.
+
 public class XmlToXml
 {
     //region Atributos
@@ -45,7 +50,7 @@ public class XmlToXml
     static HashMap<Integer, List<Race>> racesPorSeasons;
     //endregion
 
-    public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException, TransformerException
+    public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException
     {
         docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         docGP = docBuilder.newDocument();
@@ -78,12 +83,12 @@ public class XmlToXml
      */
     private static HashMap<Integer, Circuit> obtenerCircuits() throws IOException, SAXException
     {
+        HashMap<Integer, Circuit> hashMap = new HashMap<>();
+        
         final String xml = "circuits.xml";
 
         final Document doc = docBuilder.parse(xml);
-
         var lectorXML = new LectorXML(xml, doc);
-        HashMap<Integer, Circuit> hashMap = new HashMap<>();
 
         lectorXML.leerNodosPorNombre("Circuit", nodo ->
         {
@@ -228,33 +233,42 @@ public class XmlToXml
 
             racesList.forEach(race ->
             {
+                //region Nodo Race
                 var nodoRace = escritorXML.objetoANodo(
                         "Race",
                         race,
                         race_atributosAIgnorar
                 );
 
-                // Se añade date por separado para ponerlo con el formato de interés (dd/MM/yyy)
+                //region Nodo Date (se añade date por separado para ponerlo con el formato de interés [dd/MM/yyy])
                 var nodoDate = doc.createElement("date");
                 nodoDate.setTextContent(race.getDate());
-                nodoRace.appendChild(nodoDate);
 
-                // Se añade por separado, ya que no interesa añadir raceId (es redundante)
+                nodoRace.appendChild(nodoDate);
+                //endregion
+                
+                //endregion
+
+                //region Nodo BestLapTime (se añade por separado, ya que no interesa añadir raceId, es redundante)
                 if (race.bestLapTime != null)
                 {
-                    // Se añade por separado para que tenga el formato de interés (m:ss.SSS)
-                    var nodoTime = doc.createElement("time");
-                    nodoTime.setTextContent(race.bestLapTime.getTime());
-
                     var nodoBestLapTime = escritorXML.objetoANodo(
                             "bestLapTime",
                             race.bestLapTime,
                             bestLapTime_atributosAIgnorar
                     );
-                    
+
+                    //region Nodo Time (se añade por separado para que tenga el formato de interés [m:ss.SSS])
+                    var nodoTime = doc.createElement("time");
+                    nodoTime.setTextContent(race.bestLapTime.getTime());
+
                     nodoBestLapTime.appendChild(nodoTime);
+                    //endregion
+                    
                     nodoRace.appendChild(nodoBestLapTime);
                 }
+                //endregion
+
                 nodoTemporada.appendChild(nodoRace);
             });
 
