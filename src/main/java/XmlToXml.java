@@ -72,7 +72,7 @@ public class XmlToXml
 
         long finish = System.currentTimeMillis();
 
-        System.out.println("Tiempo: " + (float) ( finish - start ) / 1000.0 + "s");
+        System.out.println("Tiempo: " + ( finish - start ) / 1000.0 + "s");
     }
 
     //region Métodos
@@ -83,7 +83,7 @@ public class XmlToXml
     private static HashMap<Integer, Circuit> obtenerCircuits() throws IOException, SAXException
     {
         HashMap<Integer, Circuit> hashMap = new HashMap<>();
-        
+
         final String xml = "circuits.xml";
 
         final Document doc = docBuilder.parse(xml);
@@ -245,7 +245,7 @@ public class XmlToXml
 
                 nodoRace.appendChild(nodoDate);
                 //endregion
-                
+
                 //endregion
 
                 //region Nodo BestLapTime (se añade por separado, ya que no interesa añadir raceId, es redundante)
@@ -263,7 +263,7 @@ public class XmlToXml
 
                     nodoBestLapTime.appendChild(nodoTime);
                     //endregion
-                    
+
                     nodoRace.appendChild(nodoBestLapTime);
                 }
                 //endregion
