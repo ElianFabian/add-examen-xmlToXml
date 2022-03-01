@@ -72,7 +72,7 @@ public class XmlToXml
     }
 
     //region Métodos
-    
+
     /**
      * Devuelve un HasMap con todos los circuitos agrupados por su id.
      */
@@ -84,7 +84,7 @@ public class XmlToXml
 
         var lectorXML = new LectorXML(xml, doc);
         HashMap<Integer, Circuit> hashMap = new HashMap<>();
-        
+
         lectorXML.leerNodosPorNombre("Circuit", nodo ->
         {
             int id = nodo.getTextoInt("circuitId");
@@ -97,7 +97,7 @@ public class XmlToXml
 
         return hashMap;
     }
-    
+
     /**
      * Devuelve un HasMap con todos las carreras agrupadas por su id.
      */
@@ -109,7 +109,7 @@ public class XmlToXml
 
         final Document doc = docBuilder.parse(xml);
         var lectorXML = new LectorXML(xml, doc);
-        
+
         lectorXML.leerNodosPorNombre("Race", nodo ->
         {
             int id = nodo.getTextoInt("raceId");
@@ -129,7 +129,7 @@ public class XmlToXml
 
         return hashMap;
     }
-    
+
     /**
      * Devuelve un HasMap de todas las vueltas de cada carrera.
      */
@@ -141,7 +141,7 @@ public class XmlToXml
 
         final Document doc = docBuilder.parse(xml);
         var lectorXML = new LectorXML(xml, doc);
-        
+
         lectorXML.leerNodosPorNombre("lapTime", nodo ->
         {
             int raceId = nodo.getTextoInt("raceId");
@@ -170,7 +170,7 @@ public class XmlToXml
         lapTimeHashMap.forEach((raceId, lapTimeList) ->
         {
             var bestLapTime = obtenerElMejorLapTime(lapTimeList);
-            
+
             hashMap.put(raceId, bestLapTime);
         });
         return hashMap;
@@ -194,7 +194,7 @@ public class XmlToXml
         }
         return bestLapTime;
     }
-    
+
     /**
      * Devuelve un HashMap de listas de carreras agrupadas por temporada
      */
@@ -219,6 +219,9 @@ public class XmlToXml
         var rootElement = doc.createElement("Temporadas");
         doc.appendChild(rootElement);
 
+        var race_atributosAIgnorar = Set.of("date", "bestLapTime");
+        var bestLapTime_atributosAIgnorar = Set.of("raceId", "time");
+
         racesPorSeasons.forEach((year, racesList) ->
         {
             var temporada = doc.createElement("Temporada");
@@ -228,9 +231,9 @@ public class XmlToXml
                 Element nodoRace = escritorXML.objetoANodo(
                         "Race",
                         race,
-                        Set.of("date", "bestLapTime") // Atributos a ignorar
+                        race_atributosAIgnorar
                 );
-                
+
                 // Se añade date por separado para ponerlo con el formato de interés (dd/MM/yyy)
                 var nodoDate = doc.createElement("date");
                 nodoDate.setTextContent(race.getDate());
@@ -246,7 +249,7 @@ public class XmlToXml
                     var nodoBestLapTime = escritorXML.objetoANodo(
                             "bestLapTime",
                             race.bestLapTime,
-                            Set.of("raceId", "time")
+                            bestLapTime_atributosAIgnorar
                     );
                     
                     nodoBestLapTime.appendChild(nodoTime);
@@ -254,11 +257,11 @@ public class XmlToXml
                 }
                 temporada.appendChild(nodoRace);
             });
-            
+
             temporada.setAttribute("year", year.toString());
             rootElement.appendChild(temporada);
         });
     }
-    
+
     //endregion
 }
