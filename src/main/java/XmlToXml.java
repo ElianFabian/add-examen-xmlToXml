@@ -31,7 +31,7 @@ import java.util.Set;
 // y así se evita try-catch's que ensucian el código.
 
 // Cabe mencionar que en este código no se usa el estándar de getters y setters,
-// sino que se utilizan directamente las propiedades.
+// sino que se utilizan directamente los atributos.
 
 public class XmlToXml
 {
@@ -246,7 +246,7 @@ public class XmlToXml
                 nodoRace.appendChild(nodoDate);
                 //endregion
 
-                //endregion
+                //endregion 
 
                 //region Nodo BestLapTime (se añade por separado, ya que no interesa añadir raceId, es redundante)
                 if (race.bestLapTime != null)
