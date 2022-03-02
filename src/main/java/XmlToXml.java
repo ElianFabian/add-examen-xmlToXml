@@ -87,7 +87,7 @@ public class XmlToXml
         final String xml = "circuits.xml";
 
         final Document doc = docBuilder.parse(xml);
-        var lectorXML = new LectorXML(xml, doc);
+        var lectorXML = new LectorXML(doc);
 
         lectorXML.leerNodosPorNombre("Circuit", nodo ->
         {
@@ -115,7 +115,7 @@ public class XmlToXml
         final String xml = "races.xml";
 
         final Document doc = docBuilder.parse(xml);
-        var lectorXML = new LectorXML(xml, doc);
+        var lectorXML = new LectorXML(doc);
 
         lectorXML.leerNodosPorNombre("Race", nodo ->
         {
@@ -149,7 +149,8 @@ public class XmlToXml
         final String xml = "lapTimes.xml";
 
         final Document doc = docBuilder.parse(xml);
-        var lectorXML = new LectorXML(xml, doc);
+        
+        var lectorXML = new LectorXML(doc);
 
         lectorXML.leerNodosPorNombre("lapTime", nodo ->
         {

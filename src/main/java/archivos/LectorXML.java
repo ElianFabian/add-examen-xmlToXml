@@ -47,10 +47,10 @@ public class LectorXML
         //endregion
     }
 
-    public LectorXML(String ficheroXML, Document doc)
+    public LectorXML(Document doc)
     {
-        this.ficheroXML = ficheroXML;
         this.doc = doc;
+        this.ficheroXML = doc.getDocumentURI();
     }
 
     /**
