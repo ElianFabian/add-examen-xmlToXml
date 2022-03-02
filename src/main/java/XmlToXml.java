@@ -217,6 +217,7 @@ public class XmlToXml
 
         return hashMap;
     }
+    
     /**
      * Pasa los objetos a XML.
      */
