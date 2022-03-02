@@ -96,7 +96,6 @@ public class XmlToXml
                     nodo.getTexto("name"),
                     nodo.getTexto("location"),
                     nodo.getTexto("country")
-
             );
 
             hashMap.put(circuit.id, circuit);
