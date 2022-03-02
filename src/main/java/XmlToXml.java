@@ -91,12 +91,15 @@ public class XmlToXml
 
         lectorXML.leerNodosPorNombre("Circuit", nodo ->
         {
-            int id = nodo.getTextoInt("circuitId");
-            String name = nodo.getTexto("name");
-            String location = nodo.getTexto("location");
-            String country = nodo.getTexto("country");
+            var circuit = new Circuit(
+                    nodo.getTextoInt("circuitId"),
+                    nodo.getTexto("name"),
+                    nodo.getTexto("location"),
+                    nodo.getTexto("country")
 
-            hashMap.put(id, new Circuit(id, name, location, country));
+            );
+
+            hashMap.put(circuit.id, circuit);
         });
 
         return hashMap;
@@ -116,19 +119,21 @@ public class XmlToXml
 
         lectorXML.leerNodosPorNombre("Race", nodo ->
         {
-            int id = nodo.getTextoInt("raceId");
             int circuitId = nodo.getTextoInt("circuitId");
-            int year = nodo.getTextoInt("year");
-            int round = nodo.getTextoInt("round");
-            String date = nodo.getTexto("date");
-            String time = nodo.getTexto("time");
-            String url = nodo.getTexto("url");
 
-            var race = new Race(id, year, round, date, time, url);
+            var race = new Race(
+                    nodo.getTextoInt("raceId"),
+                    nodo.getTextoInt("year"),
+                    nodo.getTextoInt("round"),
+                    nodo.getTexto("date"),
+                    nodo.getTexto("time"),
+                    nodo.getTexto("url")
+            );
+
             race.circuit = circuitsHashMap.get(circuitId);
-            race.bestLapTime = bestLapTimesHasMap.get(id);
+            race.bestLapTime = bestLapTimesHasMap.get(race.id);
 
-            hashMap.put(id, race);
+            hashMap.put(race.id, race);
         });
 
         return hashMap;
@@ -148,17 +153,17 @@ public class XmlToXml
 
         lectorXML.leerNodosPorNombre("lapTime", nodo ->
         {
-            int raceId = nodo.getTextoInt("raceId");
-            int driverId = nodo.getTextoInt("driverId");
-            int lap = nodo.getTextoInt("lap");
-            String time = nodo.getTexto("time");
-
-            var lapTime = new LapTime(raceId, driverId, lap, time);
+            var lapTime = new LapTime(
+                    nodo.getTextoInt("raceId"),
+                    nodo.getTextoInt("driverId"),
+                    nodo.getTextoInt("lap"),
+                    nodo.getTexto("time")
+            );
 
             // Si no hay un ArrayList se añade
-            hashMap.computeIfAbsent(raceId, v -> new ArrayList<>());
+            hashMap.computeIfAbsent(lapTime.raceId, v -> new ArrayList<>());
 
-            hashMap.get(raceId).add(lapTime);
+            hashMap.get(lapTime.raceId).add(lapTime);
         });
 
         return hashMap;
@@ -196,7 +201,7 @@ public class XmlToXml
                 bestLapTime = lapTime;
             }
         }
-        
+
         return bestLapTime;
     }
 
@@ -217,7 +222,7 @@ public class XmlToXml
 
         return hashMap;
     }
-    
+
     /**
      * Pasa los objetos a XML.
      */
