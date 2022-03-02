@@ -196,6 +196,7 @@ public class XmlToXml
                 bestLapTime = lapTime;
             }
         }
+        
         return bestLapTime;
     }
 
