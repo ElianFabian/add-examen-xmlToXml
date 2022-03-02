@@ -30,12 +30,12 @@ public class LectorXML
             return elemento.getElementsByTagName(childName).item(0).getTextContent();
         }
 
-        public int getTextoInt(String childName)
+        public int getInt(String childName)
         {
             return Integer.parseInt(getTexto(childName));
         }
 
-        public float getTextoFloat(String childName)
+        public float getFloat(String childName)
         {
             return Float.parseFloat(getTexto(childName));
         }

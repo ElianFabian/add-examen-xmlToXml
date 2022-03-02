@@ -92,7 +92,7 @@ public class XmlToXml
         lectorXML.leerNodosPorNombre("Circuit", nodo ->
         {
             var circuit = new Circuit(
-                    nodo.getTextoInt("circuitId"),
+                    nodo.getInt("circuitId"),
                     nodo.getTexto("name"),
                     nodo.getTexto("location"),
                     nodo.getTexto("country")
@@ -118,12 +118,12 @@ public class XmlToXml
 
         lectorXML.leerNodosPorNombre("Race", nodo ->
         {
-            int circuitId = nodo.getTextoInt("circuitId");
+            int circuitId = nodo.getInt("circuitId");
 
             var race = new Race(
-                    nodo.getTextoInt("raceId"),
-                    nodo.getTextoInt("year"),
-                    nodo.getTextoInt("round"),
+                    nodo.getInt("raceId"),
+                    nodo.getInt("year"),
+                    nodo.getInt("round"),
                     nodo.getTexto("date"),
                     nodo.getTexto("time"),
                     nodo.getTexto("url")
@@ -154,9 +154,9 @@ public class XmlToXml
         lectorXML.leerNodosPorNombre("lapTime", nodo ->
         {
             var lapTime = new LapTime(
-                    nodo.getTextoInt("raceId"),
-                    nodo.getTextoInt("driverId"),
-                    nodo.getTextoInt("lap"),
+                    nodo.getInt("raceId"),
+                    nodo.getInt("driverId"),
+                    nodo.getInt("lap"),
                     nodo.getTexto("time")
             );
 
