@@ -206,13 +206,14 @@ public class XmlToXml
     {
         HashMap<Integer, List<Race>> hashMap = new HashMap<>();
 
-        for (var r : racesHasMap.entrySet())
+        racesHasMap.forEach((id, race) ->
         {
             // Si no hay un ArrayList se añade
-            hashMap.computeIfAbsent(r.getValue().year, v -> new ArrayList<>());
+            hashMap.computeIfAbsent(race.year, v -> new ArrayList<>());
 
-            hashMap.get(r.getValue().year).add(r.getValue());
-        }
+            hashMap.get(race.year).add(race);
+        });
+
         return hashMap;
     }
     /**
