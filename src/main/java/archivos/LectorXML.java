@@ -25,19 +25,19 @@ public class LectorXML
         //endregion
 
         //region Métodos
-        public String getTexto(String childName)
+        public String getString(String childName)
         {
             return elemento.getElementsByTagName(childName).item(0).getTextContent();
         }
 
         public int getInt(String childName)
         {
-            return Integer.parseInt(getTexto(childName));
+            return Integer.parseInt(getString(childName));
         }
 
         public float getFloat(String childName)
         {
-            return Float.parseFloat(getTexto(childName));
+            return Float.parseFloat(getString(childName));
         }
 
         public String getAtributo(String name)

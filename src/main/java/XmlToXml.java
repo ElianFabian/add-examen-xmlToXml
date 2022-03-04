@@ -93,9 +93,9 @@ public class XmlToXml
         {
             var circuit = new Circuit(
                     nodo.getInt("circuitId"),
-                    nodo.getTexto("name"),
-                    nodo.getTexto("location"),
-                    nodo.getTexto("country")
+                    nodo.getString("name"),
+                    nodo.getString("location"),
+                    nodo.getString("country")
             );
 
             hashMap.put(circuit.id, circuit);
@@ -124,9 +124,9 @@ public class XmlToXml
                     nodo.getInt("raceId"),
                     nodo.getInt("year"),
                     nodo.getInt("round"),
-                    nodo.getTexto("date"),
-                    nodo.getTexto("time"),
-                    nodo.getTexto("url")
+                    nodo.getString("date"),
+                    nodo.getString("time"),
+                    nodo.getString("url")
             );
 
             race.circuit = circuitsHashMap.get(circuitId);
@@ -157,7 +157,7 @@ public class XmlToXml
                     nodo.getInt("raceId"),
                     nodo.getInt("driverId"),
                     nodo.getInt("lap"),
-                    nodo.getTexto("time")
+                    nodo.getString("time")
             );
 
             // Si no hay un ArrayList se añade
