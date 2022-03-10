@@ -182,6 +182,7 @@ public class XmlToXml
 
             hashMap.put(raceId, bestLapTime);
         });
+        
         return hashMap;
     }
 
