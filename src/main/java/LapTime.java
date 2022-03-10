@@ -7,7 +7,7 @@ import java.util.Date;
 public class LapTime implements EscritorXML.ObjetoXML
 {
     //region Atributos
-    int raceId;
+    @EscritorXML.Ignorar int raceId;
     int driverId;
     int lap;
     Date time;

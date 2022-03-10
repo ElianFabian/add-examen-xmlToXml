@@ -13,6 +13,8 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.SchemaFactory;
 import java.io.File;
 import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Set;
@@ -28,6 +30,12 @@ public class EscritorXML
      * con sus respetivos nodos hijo, en lugar de crear un nodo con un nodo texto (el toString() del objeto).
      */
     public static interface ObjetoXML { }
+
+    /**
+     * Los campos que presenten esta anotación no serán añadidos al convertir un objeto a nodo
+     */
+    @Retention(RetentionPolicy.RUNTIME)
+    public static @interface Ignorar { }
 
     Document doc;
     String ficheroDestinoXML;
@@ -74,6 +82,8 @@ public class EscritorXML
 
     private void aniadirCamposComoNodos(Element nodo, Field campo, Object valor)
     {
+        if (campo.isAnnotationPresent(Ignorar.class)) return;
+
         // Si un campo implementa ObjetoXML entonces se convierte ese campo a nodo con sus respectivos atributos como nodos hijo
         if (ObjetoXML.class.isAssignableFrom(campo.getType()))
         {

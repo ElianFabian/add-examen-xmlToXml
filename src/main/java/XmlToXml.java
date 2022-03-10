@@ -232,7 +232,7 @@ public class XmlToXml
         doc.appendChild(rootElement);
 
         var race_atributosAIgnorar = Set.of("date", "bestLapTime");
-        var bestLapTime_atributosAIgnorar = Set.of("raceId", "time");
+        var bestLapTime_atributosAIgnorar = Set.of("time");
 
         racesPorSeasons.forEach((year, racesList) ->
         {
