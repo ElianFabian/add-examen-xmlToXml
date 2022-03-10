@@ -224,7 +224,7 @@ public class XmlToXml
     }
 
     /**
-     * Pasa los objetos a XML.
+     * Pasa los objetos a un fichero XML.
      */
     private static void escribirXML(Document doc)
     {
@@ -247,7 +247,7 @@ public class XmlToXml
                         race_atributosAIgnorar
                 );
 
-                //region Nodo Date (se añade date por separado para ponerlo con el formato de interés [dd/MM/yyy])
+                //region Nodo Date (se añade por separado para ponerlo con el formato de interés [dd/MM/yyy])
                 var nodoDate = doc.createElement("date");
                 nodoDate.setTextContent(race.getDate());
 
